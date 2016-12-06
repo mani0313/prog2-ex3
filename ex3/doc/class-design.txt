@@ -1,3 +1,28 @@
+class meiro{
+フィールド変数 private: スタート位置 start
+                      ゴール位置　goal
+                      通路　course
+                      壁　wall
+
+//座標(0,0)を迷路の左上とする。
+startchart = (2,1)
+map size = (縦 = 7,横 = 8)
+
+//private装飾子をつけたのでゲッターセッターする
+set,get: フィールド変数
+
+//迷路情報をテキストから読み込む
+private static int[] mapcreate()
+BufferedReader reader = new BufferedReader(
+				new InputStreamReader(new FileInputStream("map.txt")));
+
+//テキストに書かれた文字をフィールド変数に入れる。
+'S' = start
+'G' = goal
+' ' = course
+'#' = wall
+
+//二次元配列に変換して迷路情報を保持する。
 class player
 private void move{
 迷路の攻略法　左手添え(常に壁に左手をついて歩けばゴールにたどり着く）で解く方法
@@ -16,5 +41,5 @@ private void move{
     if (dire == -right){
     dire = 3
     }
-    
+
 }
