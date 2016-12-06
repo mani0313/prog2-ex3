@@ -24,3 +24,5 @@ BufferedReader reader = new BufferedReader(
 
 //二次元配列に変換して迷路情報を保持する。
 }
+
+class player{
