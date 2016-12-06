@@ -1,0 +1,20 @@
+class player
+private void move{
+迷路の攻略法　左手添え(常に壁に左手をついて歩けばゴールにたどり着く）で解く方法
+
+向き/dire 方向を上から時計回りで/0~3/で設定
+    まず、左に進めるかチェック
+    int left = dire+1
+    if (left == wall){
+    }
+
+    そままの進行方向に進めるかをチェックする
+    int next =  course
+    while (next == 1)
+
+    壁に当たったら右へ進行方向を変えて進めるかを繰り返しチェック
+    if (dire == -right){
+    dire = 3
+    }
+    
+}
