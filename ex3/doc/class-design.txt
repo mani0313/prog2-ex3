@@ -23,7 +23,17 @@ BufferedReader reader = new BufferedReader(
 '#' = wall
 
 //二次元配列に変換して迷路情報を保持する。
-class player
+
+class player{
+private player,counts
+'P' = player
+playerchart = (2,1)←プレイヤーの座標
+動く時は座標のx,yの値のいずれかに±1して移動する。
+また、変数countsを用意し、playerchartの値を一回変更する度に+1していき、歩数を計測する。
+}
+
+
+
 private void move{
 迷路の攻略法　左手添え(常に壁に左手をついて歩けばゴールにたどり着く）で解く方法
 
@@ -42,3 +52,4 @@ private void move{
     dire = 3
     }
 }
+
